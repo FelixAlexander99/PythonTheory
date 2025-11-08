@@ -1,0 +1,20 @@
+sales = input('Do you want products on sale?')
+if sales == 'yes':
+    category = input('Enter category:')
+    if category == 'sweets':
+        print('Fruit jelly for 200 coins')
+    else:
+        print('Lingonberry juice for 140 coins')
+else:
+        print('Let us know if you change your mind!')
+
+answer = input("Do you want to explore our top sellers?")
+answer = answer.lower()
+if answer == "yes":
+    category = input("Category of interest:")
+    if category == "food products":
+        print("Milk 1 l, Raisin Cookies, Peaches")
+    else:
+        print("Washing powder, Shoe brush")
+else:
+    print("Let us know if you change your mind!")

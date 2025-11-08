@@ -1,0 +1,21 @@
+def get_info():
+    name = input("Last name:")
+    profile = input("Profile subjects:")
+    profile = profile.replace(",", "")
+    profile = profile.split()
+    profile.sort()
+    return [name, profile]
+
+def print_info(student): 
+    print("Questionnaire:")
+    print("Last name:", {student[0]})
+    print("Profile subjects:")
+    subject_nr = 1
+    for subject in student[1]:
+        print(subject_nr, "-", subject)
+        subject_nr += 1
+
+student1 = get_info()
+student2 = get_info()
+print_info(student1)
+print_info(student2)

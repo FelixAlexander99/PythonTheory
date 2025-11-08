@@ -1,0 +1,39 @@
+books = {
+   'King': 'It',
+   'London': 'White Fang',
+   'Carroll': 'Alice in Wonderland',
+   'Lindgren': 'Karlsson on the Roof'}
+
+books["Defoe"] = "The Adventures of Robinson Crusoe"
+books["Dumas"] = "The Count of Monte Cristo"
+del books["King"]
+
+#add two names
+#delete one name
+
+if 'Defoe' in books and 'Dumas' in books:
+    print('The database has been updated!')
+if ('King' in books) == False:
+    print('Preferences have been updated')
+
+
+
+authors = {
+   'Kipling' : 'English novelist, short-story writer, poet, and journalist. One of the most authoritative literary figures, he was among the United Kingdoms most popular writers in the late 19th and early 20th centuries',
+   'Tolkien' : 'English writer, poet, philologist, and academic, best known as the author of the high fantasy works The Hobbit and The Lord of the Rings.',
+   'Camus' : 'French philosopher, author, dramatist, and journalist. Awarded the Nobel Prize for Literature in 1957'}
+
+author_name = input("Surname of the author:")
+author_keys = authors.keys() #Luam keyle / numele autorilor intr-o variabila
+if author_name in author_keys:
+   print("Biography:", authors[author_name]) #Printam valoarea keyii care coincide cu inputul
+else:
+   #Verificam daca utilizatorul vrea sa adauge ceva la dictionar
+   recommendation = input("Author not found. Want to add?").lower()
+   if recommendation == "yes":
+      # Tiparim biografia dintr-un input si adaugam la catalog, dupa printam pe consola
+      biography = input("Biography of the author:") 
+      authors[author_name] = biography
+      print(authors)
+   else:
+      print("Response received")

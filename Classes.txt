@@ -1,0 +1,20 @@
+class Ghost():
+    def __init__(self, nickname, color, feature, speed):
+        self.nickname = nickname
+        self.color = color
+        self.feature = feature
+        self.speed = speed
+    def print_info(self):
+        print("Nickname:", self.nickname)
+        print("Color of the character:", self.color)
+        print("The strategy that the character adheres to", self.feature)
+        print("Speed of movement:", self.speed)
+characters = list()
+characters.append(Ghost('Blinky', 'red', 'leader', 10))
+characters.append(Ghost('Pinky', 'pink', 'ambushes', 7))
+characters.append(Ghost('Inky', 'blue', 'unpredictable', 8))
+characters.append(Ghost('Clyde', 'orange', 'dumb', 5))
+name = input('Which data of the character do you want to get?')
+for ghost in characters:
+    if(ghost.nickname == name):
+        ghost.print_info()

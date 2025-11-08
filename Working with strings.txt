@@ -1,0 +1,17 @@
+login = 'smith.kate'
+password = input(login + ', enter the password to log in to your personal account:')
+ok = password == 'sweetstore111'
+print('Authorization:', ok)
+
+category = input('Enter the type of confectionery products:')
+taste = input('Enter flavour:')
+category = category.lower()
+taste = taste.lower()
+is_top = category == 'cake' and taste == 'chocolate'
+print('The most popular query is entered:', is_top)
+
+category = input("Enter the type of the confectionery product:") # Comparam cu cakes
+price = int(input("Enter reasonable price:")) # Comparam cu 500
+
+promotion = category == "cakes" and price <= 500
+print("Offer products from the promotion:", promotion)

@@ -1,7 +1,7 @@
 # PythonTheory
 Python Learning Repository
 
-This repository contains a comprehensive collection of Python scripts created throughout the process of learning the language. It serves as a structured showcase of essential Python concepts, ranging from basic syntax to more advanced programming techniques.
+This repository contains a (not so) comprehensive collection of Python scripts created throughout the process of learning the language. It serves as a structured showcase of essential Python concepts, ranging from basic syntax to more advanced programming techniques.
 
 Overview
 
